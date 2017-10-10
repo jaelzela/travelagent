@@ -1,0 +1,15 @@
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/DbUtil.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/ConnectionFactory.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/dao/ReservationDao.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/entities/Reservation.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/dao/ReservationDaoImpl.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/entities/Airline.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/entities/Airplane.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/ws/AirlineReservationImpl.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/dao/FlightDaoImpl.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/ws/model/Reservation.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/ws/AirlineReservation.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/dao/FlightDao.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/entities/Model.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/process/ReservationProcess.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/AirlineReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/airline/db/entities/Flight.java
