@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	name="AilrlineReservationWrapper"
+	targetNamespace="http://ws.airline.soa.jael.lsd.ic.unicamp.br/"
+	xmlns:tns="http://ws.airline.soa.jael.lsd.ic.unicamp.br/"
+	xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" 
+	xmlns:ns="http://ws.airline.soa.jael.lsd.ic.unicamp.br/">
+
+	<import location="AirlineReservation.wsdl" namespace="http://ws.airline.soa.jael.lsd.ic.unicamp.br/" />
+
+	<plnk:partnerLinkType name="AirlineReservationLinkType">
+		<plnk:role name="AirlineReservationRole" portType="ns:AirlineReservation" />
+	</plnk:partnerLinkType>
+
+</definitions>

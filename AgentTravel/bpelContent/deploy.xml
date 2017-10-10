@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:travelagent.soa.jael.lsd.ic.unicamp.br="http://travelagent.soa.jael.lsd.ic.unicamp.br" xmlns:ws.airline.soa.jael.lsd.ic.unicamp.br="http://ws.airline.soa.jael.lsd.ic.unicamp.br/" xmlns:ws.car.soa.jael.lsd.ic.unicamp.br="http://ws.car.soa.jael.lsd.ic.unicamp.br/" xmlns:ws.hotel.soa.jael.lsd.ic.unicamp.br="http://ws.hotel.soa.jael.lsd.ic.unicamp.br/">
+  <process name="travelagent.soa.jael.lsd.ic.unicamp.br:TravelAgent">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="travelagent.soa.jael.lsd.ic.unicamp.br:travelAgentService" port="travelAgentPort"/>
+    </provide>
+    <invoke partnerLink="AirlinePartnerLink">
+      <service name="ws.airline.soa.jael.lsd.ic.unicamp.br:AirlineReservation" port="AirlineReservationPort"/>
+    </invoke>
+    <invoke partnerLink="HotelPartnerLink">
+      <service name="ws.hotel.soa.jael.lsd.ic.unicamp.br:HotelReservation" port="HotelReservationPort"/>
+    </invoke>
+    <invoke partnerLink="CarPartnerLink">
+      <service name="ws.car.soa.jael.lsd.ic.unicamp.br:CarReservation" port="CarReservationPort"/>
+    </invoke>
+  </process>
+</deploy>

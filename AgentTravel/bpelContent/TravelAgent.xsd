@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://travelagent.soa.jael.lsd.ic.unicamp.br/schema/travelagent"
+            xmlns:tns="http://travelagent.soa.jael.lsd.ic.unicamp.br/schema/travelagent"
+            elementFormDefault="qualified">
+
+    <xsd:complexType name="simpleProcess">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="origin" type="xsd:string"/>
+            <xsd:element name="destination" type="xsd:string"/>
+            <xsd:element name="departDate" type="xsd:string"/>
+            <xsd:element name="arriveDate" type="xsd:string"/>
+            <xsd:element name="roomNumber" type="xsd:string"/>
+            <xsd:element name="hotelName" type="xsd:string"/>
+            <xsd:element name="airlineName" type="xsd:string"/>
+            <xsd:element name="carType" type="xsd:string"/>
+            <xsd:element name="flightTicketPrice" type="xsd:double"/>
+            <xsd:element name="roomPrice" type="xsd:double"/>
+            <xsd:element name="carRentPrice" type="xsd:double"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="reservationType" type="tns:simpleProcess"/>
+</xsd:schema>

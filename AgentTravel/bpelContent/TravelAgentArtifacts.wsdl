@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<definitions name="TravelAgent"
+        targetNamespace="http://travelagent.soa.jael.lsd.ic.unicamp.br"
+        xmlns:tns="http://travelagent.soa.jael.lsd.ic.unicamp.br"
+        xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
+        xmlns="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:ns="http://travelagent.soa.jael.lsd.ic.unicamp.br/schema/travelagent"
+        >
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     TYPE DEFINITION - List of types participating in this BPEL process 
+     The BPEL Designer will generate default request and response types
+     but you can define or import any XML Schema type and use them as part 
+     of the message types.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <types>
+        <schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
+                targetNamespace="http://travelagent.soa.jael.lsd.ic.unicamp.br" 
+                xmlns="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://travelagent.soa.jael.lsd.ic.unicamp.br/schema/travelagent" schemaLocation="TravelAgent.xsd"/>
+        </schema>
+    </types>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     MESSAGE TYPE DEFINITION - Definition of the message types used as 
+     part of the port type defintions
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <message name="travelAgentRequestMessage">
+        <part name="request" element="ns:reservationType"/>
+    </message>
+    <message name="travelAgentResponseMessage">
+        <part name="response" element="ns:reservationType"/>
+    </message>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PORT TYPE DEFINITION - A port type groups a set of operations into
+     a logical service unit.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+
+    <!-- portType implemented by the TravelAgent BPEL process -->
+    <portType name="travelAgentPortType">
+        <operation name="getTravelOffer">
+            <input name="travelAgentRequestMessage" message="tns:travelAgentRequestMessage" />
+            <output name="travelAgentResponseMessage" message="tns:travelAgentResponseMessage"/>
+        </operation>
+    </portType>   
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PARTNER LINK TYPE DEFINITION
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <plnk:partnerLinkType name="travelAgentLinkType">
+        <plnk:role name="travelAgentProvider" portType="tns:travelAgentPortType"/>
+    </plnk:partnerLinkType>
+    
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     BINDING DEFINITION - Defines the message format and protocol details
+     for a web service.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <binding name="travelAgentBinding" type="tns:travelAgentPortType">
+    	<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    	<operation name="getTravelOffer">
+    		<soap:operation soapAction="http://travelagent.soa.jael.lsd.ic.unicamp.br/getTravelOffer" />
+    		<input>
+    			<soap:body use="literal" />
+    		</input>
+    		<output>
+    			<soap:body use="literal" />
+    		</output>
+    	</operation>
+    </binding>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     SERVICE DEFINITION - A service groups a set of ports into
+     a service unit.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <service name="travelAgentService">
+    	<port name="travelAgentPort" binding="tns:travelAgentBinding">
+    		<soap:address location="http://localhost:6060/ode/processes/TravelAgentServiceProcess" />
+    	</port>
+    </service>
+</definitions>
