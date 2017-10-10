@@ -1,2 +1,2 @@
-# travelagent
-TravelAgent is a composite service that use three third party service (CarReservation, FlightReservation and HotelReservation services)
+# TravelAgent Service
+TravelAgent is a BPEL composite service that use three third party service (CarReservation, AirlineReservation and HotelReservation services)
