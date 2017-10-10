@@ -1,0 +1,12 @@
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/process/ReservationProcess.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/db/dao/RoomDaoImpl.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/db/DbUtil.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/db/dao/RoomDao.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/ws/model/Reservation.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/ws/HotelReservation.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/db/entities/Hotel.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/db/entities/Reservation.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/db/entities/Room.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/ws/HotelReservationImpl.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/db/ConnectionFactory.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/HotelReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/hotel/db/entities/RoomType.java
