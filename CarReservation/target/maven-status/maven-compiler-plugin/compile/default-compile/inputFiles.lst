@@ -1,0 +1,12 @@
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/db/DbUtil.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/db/ConnectionFactory.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/ws/CarReservation.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/db/entities/Enterprise.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/db/entities/Model.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/process/ReservationProcess.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/db/dao/CarDao.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/db/entities/Car.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/db/dao/CarDaoImpl.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/db/entities/Reservation.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/ws/CarReservationImpl.java
+/Users/jzelar/Documents/MAESTRIA/Development/workspace/CarReservation/src/main/java/br/unicamp/ic/lsd/jael/soa/car/ws/model/Reservation.java
